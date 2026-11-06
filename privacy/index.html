@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Surf N Slides</title>
+<meta name="description" content="Privacy Policy for the Surf N Slides Meta application that publishes Surf N Slides content to its own Instagram account.">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../apple-touch-icon.png">
+</head>
+<body><main>
+<header><img src="../apple-touch-icon.png" alt="Surf N Slides logo"><div><strong>Surf N Slides</strong><div class="mut">Corniche Beach, Abu Dhabi, United Arab Emirates</div></div></header>
+<nav><a href="../">Home</a><a href="./">Privacy Policy</a><a href="../data-deletion/">Data Deletion</a></nav>
+<h1>Privacy Policy: Surf N Slides Meta application</h1>
+<p class="mut">Effective 6 November 2026</p>
+
+<h2>1. Who we are</h2>
+<p>Surf N Slides operates an indoor FlowRider surfing venue on Corniche Beach, Abu Dhabi, United Arab Emirates (website: <a href="https://www.surfnslides.com">www.surfnslides.com</a>). This policy covers the Meta developer application named <strong>Surf N Slides</strong> (the "App"). It does not cover our venue bookings or our website, which have their own terms.</p>
+
+<h2>2. What the App does</h2>
+<p>The App is an internal business tool. It publishes Surf N Slides' own, pre-approved marketing content (photos, carousels, Reels and Stories) to the Surf N Slides Instagram professional account <strong>@surfnslide.uae</strong> on a fixed schedule, and it checks that those posts were published correctly.</p>
+<ul>
+<li>It connects only to the Instagram professional account and the linked Facebook Page that Surf N Slides owns, through a Meta Business system user.</li>
+<li>It does <strong>not</strong> offer Facebook Login or Instagram Login to the public, and members of the public cannot sign in to it.</li>
+<li>It does <strong>not</strong> run advertising, send messages, or read private messages.</li>
+</ul>
+
+<h2>3. Information the App accesses</h2>
+<p>Through the Instagram Graph API, and only for the Surf N Slides account, the App reads:</p>
+<ul>
+<li>Account details: account ID, username, display name, follower count and post count, to confirm it is connected to the right account.</li>
+<li>Details of posts on the Surf N Slides account: post ID, caption, publication time, link, media type, like count and comment count. These are used to prevent duplicate posts, confirm that scheduled posts went live, and produce internal performance reports.</li>
+<li>The account's daily content-publishing limit, to stay within Instagram's limits.</li>
+</ul>
+<p>The App does not collect the names, profiles, comments or messages of other Instagram or Facebook users. Like and comment <em>counts</em> are totals only. The App does not use cookies or tracking technologies, and does not collect data from visitors to these web pages.</p>
+
+<h2>4. Permissions requested from Meta</h2>
+<ul>
+<li><code>instagram_basic</code>: read the Surf N Slides account profile and its posts.</li>
+<li><code>instagram_content_publish</code>: publish Surf N Slides' own scheduled content to that account.</li>
+<li><code>pages_show_list</code>: identify the Surf N Slides Facebook Page that is linked to the Instagram account.</li>
+</ul>
+
+<h2>5. How information is stored and for how long</h2>
+<ul>
+<li><strong>Publishing records</strong> (post schedule key, status, Instagram post ID, link, publication time and any error message) are stored in a private GitHub repository controlled by Surf N Slides. They are kept as business records of our own social media activity for as long as the automation is in use, and they are deleted on request (see Section 8).</li>
+<li><strong>Monitoring alerts and reports</strong> (publishing status, post counts, like and comment totals) are stored as issues in the same private repository.</li>
+<li><strong>Run logs</strong> are kept by GitHub Actions under GitHub's standard log retention, which is 90 days by default.</li>
+<li><strong>Access credentials</strong> issued by Meta are stored only as encrypted GitHub Actions secrets. They are never written to logs, files or reports.</li>
+</ul>
+
+<h2>6. Service providers</h2>
+<ul>
+<li><strong>Meta Platforms</strong> (Instagram Graph API): receives the content we publish and returns the account information described above.</li>
+<li><strong>GitHub</strong> (Microsoft): hosts the private repository and runs the scheduled automation.</li>
+<li><strong>Cloudflare</strong>: during each publishing run, a temporary, randomly addressed link serves only that run's approved image or video files to Meta, which needs a public link to fetch media. The link stops working when the run ends. Only the approved marketing files being published in that run pass through it.</li>
+</ul>
+<p>We do not sell, rent or share information from the App with advertisers or data brokers, and we do not use it for advertising.</p>
+
+<h2>7. Security</h2>
+<ul>
+<li>Credentials are held as encrypted secrets with access limited to the repository owner.</li>
+<li>The repository is private.</li>
+<li>Logs mask credentials and temporary addresses.</li>
+<li>Every publication is checked against a ledger and against the account's existing posts to prevent duplicates.</li>
+</ul>
+<p>No system is completely secure, but we limit the App to the minimum data and permissions it needs.</p>
+
+<h2>8. Your choices and data deletion</h2>
+<p>The App only processes data about the Surf N Slides business account. If you believe it holds information about you, or you want data deleted, follow the <a href="../data-deletion/">Data Deletion Instructions</a> or contact us below.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>We will update this page if the App's data handling changes. The effective date above shows the latest version.</p>
+
+<h2>10. Contact</h2>
+<p>Surf N Slides, Corniche Beach, Abu Dhabi, United Arab Emirates<br>
+Email: <a href="mailto:surfnslides@gmail.com">surfnslides@gmail.com</a><br>
+Phone: +971 50 150 0222</p>
+
+<footer>© Surf N Slides · <a href="../data-deletion/">Data Deletion Instructions</a></footer>
+</main></body>
+</html>
